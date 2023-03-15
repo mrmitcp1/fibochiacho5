@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    // document.write(a + '<br>')
+    // document.write(b + '<br>')
+    let c;
+    let num = +prompt('nhap so fabonacci can hien thi')
+    for (let i = 0; i < num - 2; i++) {
+        c = a + b;
+        a = b;
+        b = c
+        // if (a===0 || b===0 || c===0){
+        // //     continue
+        // // }else if ( c % 5 === 0 ){
+        //     break
+        // }
+        if (c % 5 === 0){
+            document.write(c + '<br>')
+            break
+        }
+        // document.write(c + '<br>')
+    }
+</script>
+</body>
+</html>
